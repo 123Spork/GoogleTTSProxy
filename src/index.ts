@@ -1,8 +1,6 @@
-import compression from 'compression'
 import express, { Express } from 'express'
-import helmet from 'helmet'
 import cors from 'cors'
-import * as googleTTS from 'google-tts-api' // ES6 or TypeScript
+import * as googleTTS from 'google-tts-api'
 
 interface RequestData {
   msg: string
@@ -13,9 +11,7 @@ const main = async (): Promise<void> => {
   const app: Express = express()
 
   // Middleware
-  app.use(helmet())
   app.use(cors())
-  app.use(compression())
   app.use(express.json({ limit: '60mb' }))
   app.use(express.urlencoded({ extended: false }))
 
