@@ -3,7 +3,6 @@ import express, { Express } from 'express'
 import helmet from 'helmet'
 import cors from 'cors'
 import * as googleTTS from 'google-tts-api' // ES6 or TypeScript
-import { PORT } from './config'
 
 interface RequestData {
   msg: string
@@ -36,8 +35,8 @@ const main = async (): Promise<void> => {
   )
 
   // Start HTTP Server
-  app.listen(PORT, (): void => {
-    console.log(`Server running on ${PORT}`)
+  app.listen(5000, (): void => {
+    console.log(`Server running on ${5000}`)
   })
 }
 
