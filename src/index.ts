@@ -38,8 +38,8 @@ const main = async (): Promise<void> => {
   )
 
   // Start HTTP Server
-  app.listen(80, (): void => {
-    console.log(`Server running on ${80}`)
+  app.listen(5000, (): void => {
+    console.log(`Server running on ${5000}`)
   })
 }
 
