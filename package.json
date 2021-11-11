@@ -9,7 +9,7 @@
   "license": "ISC",
   "main": "./src/server.ts",
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack",
     "clean": "rimraf node_modules && rimraf ./package-lock.json",
     "coverage": "jest --coverage",
     "project-generate": "bash platform/project-generate.sh",
@@ -19,8 +19,7 @@
     "tsc": "tsc",
     "lint": "eslint src/**/*.ts{,x}",
     "lint:fix": "eslint src/**/*.ts{,x} --fix",
-    "update-template": "bash platform/update-template.sh",
-    "webpack": "webpack"
+    "update-template": "bash platform/update-template.sh"
   },
   "repository": {
     "type": "git",
