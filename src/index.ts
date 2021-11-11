@@ -30,6 +30,13 @@ const main = async (): Promise<void> => {
     }
   )
 
+  app.get(
+    '/health',
+    async (_req, res): Promise<void> => {
+      res.send('Hello World')
+    }
+  )
+
   // Start HTTP Server
   app.listen(5000, (): void => {
     console.log(`Server running on ${5000}`)
