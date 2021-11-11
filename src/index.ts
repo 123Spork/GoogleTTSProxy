@@ -38,8 +38,8 @@ const main = async (): Promise<void> => {
   )
 
   // Start HTTP Server
-  app.listen(5000, (): void => {
-    console.log(`Server running on ${5000}`)
+  app.listen(process.env.PORT || 5000, (): void => {
+    console.log(`Server running on ${process.env.PORT || 5000}`)
   })
 }
 
