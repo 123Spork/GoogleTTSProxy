@@ -13,7 +13,7 @@
     "clean": "rimraf node_modules && rimraf ./package-lock.json",
     "coverage": "jest --coverage",
     "project-generate": "bash platform/project-generate.sh",
-    "start": "node ./build/bundle.min.js",
+    "start": "node ./dist/bundle.min.js",
     "start-dev": "npx ts-node ./src/server.ts",
     "test": "jest --watch",
     "tsc": "tsc",
